@@ -7,7 +7,8 @@ Redmine::Plugin.register :redmine_issue_template do
   version '0.0.1'
   url 'http://undev.ru'
   author_url 'http://undev.ru'
-  menu :admin_menu, :issue_templates, { :controller => 'issue_templates', :action => 'index' }
+  menu :admin_menu, :issue_templates, { :controller => 'issue_templates', :action => 'index' },
+       :caption => :label_issue_template
 end
 
 
