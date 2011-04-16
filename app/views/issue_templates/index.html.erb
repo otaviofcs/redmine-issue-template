@@ -7,7 +7,8 @@
 <table class="list">
   <thead>
     <tr>
-      <th><%=l(:field_title)%></th>
+      <th><%= l(:field_title) %></th>
+      <th><%= l(:field_subject) %></th>
       <th><%= l(:field_description) %></th>
       <th></th>
     </tr>
@@ -16,6 +17,7 @@
 <% @issue_templates.each do |issue_template| %>
   <tr class="<%= cycle("odd", "even") %>">
     <td><%= link_to h(issue_template.title), {:action => :edit, :id => issue_template.id} %></td>
+    <td><%= h(issue_template.subject) %></td>
     <td><%= simple_format h(issue_template.description) %></td>
     <td>
      <%= link_to(l(:button_delete), { :action => 'destroy', :id => issue_template },

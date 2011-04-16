@@ -35,12 +35,12 @@ class IssueTemplatesController < ApplicationController
     redirect_to issue_templates_url
   end
 
-	def show
+  def show
     @issue_template = IssueTemplate.find(params[:issue_template_id])
-		respond_to do |type|  
+    respond_to do |type|  
       type.js   { render } 
-	  end
-	end
+    end
+  end
 
 private
 
