@@ -1,0 +1,10 @@
+one:
+    id: 1
+    title: First Template
+    description: This is the first template without a subject
+
+two:
+    id: 2
+    title: Second Template
+    description: This is the second template with a subject
+    subject: Subject Template
